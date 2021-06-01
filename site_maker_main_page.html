@@ -1,0 +1,212 @@
+﻿<!doctype html>
+<head>
+	<title>Site-maker</title>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE-Edge">
+	<meta name="viewport" content="width: device-width">
+	<script src="scripts/jquery-3.5.1.min.js"></script>
+	<script src="scripts/jquery_ui.js"></script>
+	<script>
+	    $(document).ready(function(){
+		$("#tajik_div").click(function(){
+			alert("all is ok");
+			$("#sitemaker_tajik").trigger("click");
+			
+			
+		});
+		$("body").height($("body").height()+300);
+		$("footer").on("click",function(){
+			$(this).find("*").toggleClass("unvisible visible");
+		});
+	    });
+	</script>
+	<style>
+		*{ 
+ 		  background-attachment: fixed; 
+                  background-position: auto auto;
+                  background-clip: content-box; 
+                  background-origin: content-box;
+                  background-size: 100% auto; 
+                  background-repeat: no-repeat;
+                }
+		body{
+		  background-image: url("images/image (43).jpg");
+		  background-repeat: no-repeat;
+		  text-align: center;
+		  height: +=300px; 
+		}
+
+		#main_div{ 
+                  top: 25%; 
+                  height: 50%;
+		  width: 100%; 
+                  text-align: center; 
+                }
+
+		#main_div div{
+	           display: inline-block;
+                   width: 200px; 
+                   height: 200px;
+		   background-image: url("images/image (65).jpg"); 
+                   border-radius: 300px;
+		   padding-top: 100px;
+		   font-size: 60px;
+		   opacity: 0.5; 
+                   color: white; 
+                   text-align: center;
+		   transition-property: all;
+                   transition-duration: 10s; 
+                   transition-timing-function: linear;
+		   transition-delay: 0s;
+                }
+
+		#main_div div:hover{
+                   opacity: 1;
+		   background-origin: none;
+                   background-clip: none;
+       		   background-size: 200px auto;
+	      
+                }			
+
+		
+
+		#for_h1{
+                   width: 100%;
+                   height: 100px; 
+                   border-radius: 300px;
+		   text-align: center;   
+                }
+
+		#outer_div{
+                   width: 100%;
+                   height: 100%;
+                   top: 0px; 
+                   left: 0px;
+                   background-color: black;
+                   opacity: 0.5;
+                }
+	
+		a{ 
+ 		  text-decoration: none;
+                  transition-property: all;
+                  transition-duration: 3s; 
+                  transition-delay: 0s;
+               	} 
+
+		a:hover{
+                  text-decoration: underline;
+                }
+
+		
+		#for_h1 h1{
+		   position: fixed;
+                   top: 0px; 
+                   width: 20%;
+		   left: 40%; 
+                }
+
+		#outer_footer{  
+		   background-color: black;  
+                   opacity: 0.8;
+                   color: white; 
+            	   position: absolute; 
+                   bottom: -300px; 
+                   right: 0px; 
+                   width: 100%;
+                   height: 300px; 
+                }
+
+		#inner_footer{
+                   background-color: none;
+                   color: white; 
+                   position: absolute;
+                   bottom: -300px; 
+                   right: 0px; 
+                   width: 100%;
+                   height: 300px;
+		 
+                }
+
+		footer *{
+                   transition-property: all;
+                   transition-duration: 2s;
+                   transition-delay: 0s;               
+                   transition-timing-function: linear;
+		   cursor: pointer;
+                }
+
+		.unvisible{
+		   transition-property: all;
+                   transition-duration: 2s;
+                   transition-delay: 0s;               
+                   transition-timing-function: linear; 
+                   transform: skew(90deg,90deg);
+                }
+
+		.visible{ 
+		   transition-property: all;
+                   transition-duration: 2s;
+                   transition-delay: 0s;               
+                   transition-timing-function: linear;
+		   transform: skew(0,0);
+		}
+		
+	 
+	</style>
+</head>
+<body>
+	<div id="for_h1">
+	    <div id="outer_div">
+	    </div>
+	    <h1 style="font-size: xx-large; color: white">Site-maker</h1>	
+	</div>
+	<div id="main_div">
+	<div id="tajik_div">
+	<a href="sitemaker_tajik.html"><span>Tajik</span></a>
+	</div>
+	<div id="russian_div">
+	<a href="sitemaker_russian.html"<span>Russian</span></a>
+	</div>
+	<div id="engligh_div">
+	<a href="sitemaker_english.html"<span>English<span></a>
+	</div>
+	</div>
+	
+	<footer>
+		<div id="outer_footer">
+		</div>
+		<div id="inner_footer">
+			<div class="unvisible">
+			<span>All rights reserved.</span>
+			<span id="logotype" style="color: yellow;">Altron & Mcduck</span><br>
+			<span>2021</span>
+			</div>
+			
+			<div class="visible" style="width: 100%; 
+				    height: 100px;
+				    color: yellow; 
+                                    background-color: black; 
+                                    opacity: 0.8;
+				    transition-property: all;
+				    font-size: xx-large;
+				    text-align: center;
+			`	    " >
+				<br>
+				Altron
+			           &
+				Mc.Duck
+			</div>
+
+			<section class="unvisible" style="width: 50%; float: left;">
+				This web-app is created to make creating sites easy to everybody.
+				It makes creating sites possible to everyone. 
+				This app can be used either by professionals or by simple visitors.
+				There is no restricts to the source  
+			</section>
+
+			<span class="unvisible" style="bottom: 0px; transition-property:all; 
+ 						  transform: skew(-45deg,0);">Tajikistan.Bobojon Gafurov</span>
+		</div>
+	</footer>
+</body>
+</html>
